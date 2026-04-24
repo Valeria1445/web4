@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $languages_from_db = $allowed_languages;
     }
 
-    include 'form.php';
+    include 'anketa.php';
     exit();
 }
 
