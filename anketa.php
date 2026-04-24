@@ -123,7 +123,7 @@
         <button type="submit">Сохранить</button>
     </form>
 
-    <div class="footer-links">
+    <div class="back-link">
         <a href="v.php">📊 Просмотреть сохранённые анкеты</a>
     </div>
 </div>
