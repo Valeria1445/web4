@@ -14,6 +14,10 @@
     </header>
 
     <!-- Блок сообщений (ошибки, успех) -->
+   <?php if (!empty($success_message)): ?>
+        <div class="success"><?= htmlspecialchars($success_message) ?></div>
+    <?php endif; ?>
+
     <?php if (!empty($messages)): ?>
         <div class="errors">
             <ul>

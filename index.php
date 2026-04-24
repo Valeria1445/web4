@@ -59,9 +59,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $values['contract_accepted'] = !empty($_COOKIE['contract_accepted_value']) ? true : false;
 
     // Сообщение об успешном сохранении (кука save удаляется)
+      $success_message = '';
     if (!empty($_COOKIE['save'])) {
         setcookie('save', '', 1);
-        $messages[] = '<div class="success-message">Данные успешно сохранены!</div>';
+        $success_message = 'Данные успешно сохранены!';
     }
 
     // Список языков для выпадающего списка
